@@ -1,8 +1,23 @@
 <%- include('./partials/header.ejs') %>
 
 <div class="author">
-    <h1 class="author__heading">Hey there, I am Yasas Lekamge</h1>
-    <p class="author__body">Full-stack Web Developer</p>
+    <h1 class="author__heading">Global Holiday Seeker</h1>
+    <p class="author__body">Enter your details below</p>
 </div>
+
+<div class="container">
+    <form action="/submit" method="post" id="myForm">
+        <label>Enter your country</label>
+        <input type="text" name="country" placeholder="Country" required> <br>
+        <label>Enter year</label> 
+        <input type="number" name="year" placeholder="Year" required>
+        <button type="submit">Send</button>
+    </form>
+    
+    <div class="holidays">
+        <p>  </p>
+    </div>
+</div>
+
 
 <%- include('./partials/footer.ejs') %>

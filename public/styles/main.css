@@ -31,3 +31,47 @@ h3 { font-size: var(--font-size-md); }
 .author{
     text-align: center;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myForm {
+    width: 25%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background-color: #FAF5EE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6ab46c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.holidays {
+    margin-top: 20px;
+    width: 27%; 
+    padding: 10px;
+    background-color: #bed1e7; 
+    border-radius: var(--border-radius);
+}
