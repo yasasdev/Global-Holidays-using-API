@@ -1,0 +1,18 @@
+{
+  "name": "openweathermap-api",
+  "version": "1.0.0",
+  "description": "Outputs the tomorrow weather",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yasas Lekamge",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "openweathermap-api": "file:"
+  }
+}
