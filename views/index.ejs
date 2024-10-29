@@ -1,12 +1,12 @@
 <%- include('./partials/header.ejs') %>
 
 <div class="author">
-    <h1 class="author__heading">Global Holiday Seeker</h1>
+    <h1 class="author__heading">Global Holiday Navigator</h1>
     <p class="author__body">Enter your details below</p>
 </div>
 
 <div class="container">
-    <form action="/submit" method="post" id="myForm">
+    <form action="/submit" method="POST" id="myForm">
         <label>Enter your country</label>
         <input type="text" name="country" placeholder="Country" class="textbox" required> <br>
         <label>Enter year</label> 
@@ -15,7 +15,19 @@
     </form>
     
     <div class="holidays">
-        <p>  </p>
+        <% if (holidays && holidays.length) { %>
+            <ul>
+                <% holidays.forEach(holiday => { %>
+                    <li>
+                        <strong>Name:</strong> <%= holiday.name %> <br>
+                        <strong>Description:</strong> <%= holiday.description %> <br>
+                        <strong>Date:</strong> <%= holiday.date %>
+                    </li>
+                <% }); %>
+            </ul>
+        <% } else { %>
+            <p>Sorry, No holidays found for the selected country and year.</p>
+        <% } %>
     </div>
 </div>
 
