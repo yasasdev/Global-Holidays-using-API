@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 const API_URL = "https://calendarific.com/api/v2";
-const API_KEY = "LWivFMNEjFHIOs6UsZ9ryfD5bjuXeiSt";
+const API_KEY = "";
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
