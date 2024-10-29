@@ -20,7 +20,7 @@ Developers need to create a free account on the Calendarific website to obtain a
 - npm i
 
 ### 3. Run the Application
-- node index.js
+- nodemon index.js
 
 ### 4. Update the API Key
 
